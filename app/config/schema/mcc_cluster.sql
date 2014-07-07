@@ -36,7 +36,7 @@ CREATE TABLE `mcc_action_log` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mcc_menu
@@ -84,9 +84,9 @@ ALTER TABLE `mcc_role` ADD INDEX `idx_mid` (`mid`) ;
 -- ----------------------------
 -- Records of mcc_role
 -- ----------------------------
-INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('0', 'all', '超级管理员', NULL, '2014-07-06 17:51:26', NULL);
-INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('1', '', '管理员', NULL, '2014-07-06 18:00:13', NULL);
-INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('2', '', '普通用户', NULL, '2014-07-06 18:36:58', NULL);
+INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('1', 'all', '超级管理员', NULL, '2014-07-06 17:51:26', NULL);
+INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('2', '', '管理员', NULL, '2014-07-06 18:00:13', NULL);
+INSERT INTO `mcc_role` (`id`, `mid`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES ('3', '', '普通用户', NULL, '2014-07-06 18:36:58', NULL);
 
 -- ----------------------------
 -- Table structure for mcc_user
@@ -99,7 +99,7 @@ CREATE TABLE `mcc_user` (
   `email` varchar(255) DEFAULT NULL,
   `truename` varchar(255) DEFAULT NULL,
   `nickname` varchar(255) DEFAULT NULL,
-  `roleid` tinyint(3) NOT NULL DEFAULT '2',
+  `roleid` tinyint(3) NOT NULL DEFAULT '3',
   `ip` varchar(50) DEFAULT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `login_at` datetime DEFAULT NULL,
@@ -112,4 +112,4 @@ CREATE TABLE `mcc_user` (
 -- ----------------------------
 -- Records of mcc_user
 -- ----------------------------
-INSERT INTO `mcc_user` VALUES ('19', 'admin', '$2y$10$PvtizwUp7Lk6r6K8z1eT7uAGIJrBsAjkQHwCBMYk1stXnZncp7RpG', 'admin@admin.com', '大大王', '大大王', '127', '127.0.0.1', 'jc8LTgK6OTW2mZa4BgRdbzEpR5NQjM44A2l9ccgCg2STVAWrylaJfHGb3t9G', '2014-07-04 09:00:16', '2014-07-02 12:15:16', '2014-07-04 12:06:15', null);
+INSERT INTO `mcc_user` VALUES ('19', 'admin', '$2y$10$PvtizwUp7Lk6r6K8z1eT7uAGIJrBsAjkQHwCBMYk1stXnZncp7RpG', 'admin@admin.com', '大大王', '大大王', '1', '127.0.0.1', 'jc8LTgK6OTW2mZa4BgRdbzEpR5NQjM44A2l9ccgCg2STVAWrylaJfHGb3t9G', '2014-07-04 09:00:16', '2014-07-02 12:15:16', '2014-07-04 12:06:15', null);
