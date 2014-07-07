@@ -1,0 +1,9 @@
+@section('module_name')
+管理首页
+@stop
+@section('module_subname')
+首页
+@stop
+@section('content')
+    'hello'
+@stop

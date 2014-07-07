@@ -1,0 +1,34 @@
+########################
+## Project
+########################
+
+[Rr]obots.txt
+
+########################
+## Environnement
+########################
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Mac crap
+.DS_Store
+
+##/vendor
+##/bootstrap/compiled.php
+
+/app/storage/cache
+/app/storage/logs
+/app/storage/meta
+/app/storage/sessions
+/app/storage/views
+
+/public/.htaccess
+
+composer.phar
+composer.lock
+
+.project
