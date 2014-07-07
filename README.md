@@ -40,4 +40,4 @@ This is an Manage System for Laravel with theme [bracket](http://themepixels.com
 
 ### update
 
-自身需求已经满足，应该很长段时间不会更新了，如有个别需求欢迎提出。。
+自身需求已经满足，应该很长段时间不会更新了，如有个别需求欢迎提出。。<a href="mailto:rose1988.c@gmail.com">rose1988c</a>
