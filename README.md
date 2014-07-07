@@ -22,17 +22,19 @@ This is an Manage System for Laravel with theme [bracket](http://themepixels.com
 
 没有用迁移工具，请自行导入数据库 `sql => app\config\schema\mcc_cluster.sql`
 
-```composer.json 主要包含
-{
-	"require": {
-		"laravel/framework": "4.1.*",
-		"barryvdh/laravel-ide-helper": "1.*",
-		"bllim/datatables": "*",
-        "way/generators": "2.*",
-        "guzzlehttp/guzzle": "~4.0"
+
+	`composer.json`
+
+	{
+		"require": {
+			"laravel/framework": "4.1.*",
+			"barryvdh/laravel-ide-helper": "1.*",
+			"bllim/datatables": "*",
+	        "way/generators": "2.*",
+	        "guzzlehttp/guzzle": "~4.0"
+		}
 	}
-}
-```
+
 
 ### update
 
