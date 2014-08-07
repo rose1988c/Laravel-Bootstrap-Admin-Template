@@ -10,6 +10,7 @@ composer.lock
 .env.php
 .project
 .settings
+.buildpath
 
 /app/storage/cache/*
 /app/storage/logs/*
