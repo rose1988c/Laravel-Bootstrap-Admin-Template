@@ -9,6 +9,7 @@ composer.lock
 .env.*.php
 .env.php
 .project
+.settings
 
 /app/storage/cache/*
 /app/storage/logs/*
