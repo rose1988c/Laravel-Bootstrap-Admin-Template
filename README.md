@@ -20,20 +20,19 @@ This is an Manage System for Laravel with theme [bracket](http://themepixels.com
 
 该版本是全部文件打包形式，下个版本将以`package`的形式
 
-因composer缓慢，已增加`vendor`目录，也可以自行`composer update`
-
 没有用迁移工具，请自行导入数据库 `sql => app\config\schema\mcc_cluster.sql`
 
+自行`composer update`
 
 	`composer.json`
 
 	{
 		"require": {
-			"laravel/framework": "4.1.*",
-			"barryvdh/laravel-ide-helper": "1.*",
-			"bllim/datatables": "*",
-	        "way/generators": "2.*",
-	        "guzzlehttp/guzzle": "~4.0"
+            "laravel/framework": "4.2.*",
+            "barryvdh/laravel-ide-helper": "1.*",
+            "bllim/datatables": "*",
+            "way/generators": "2.*",
+            "guzzlehttp/guzzle": "~4.0"
 		}
 	}
 
