@@ -116,3 +116,11 @@ Route::filter('dev', function()
 {
     if (app()->environment() != 'dev') return Redirect::to(route('index'));
 });
+
+/*
+ |--------------------------------------------------------------------------
+| Route Cache Filter
+|--------------------------------------------------------------------------
+*/
+Route::filter('cache.fetch', 'Mcc\Filters@fetch');
+Route::filter('cache.put', 'Mcc\Filters@put');
