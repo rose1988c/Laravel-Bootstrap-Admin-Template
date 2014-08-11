@@ -2,6 +2,21 @@
 ## Project
 ########################
 
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.project
+.settings
+.buildpath
+
+/app/storage/cache/*
+/app/storage/logs/*
+/app/storage/sessions/*
+/app/storage/views/*
+
 [Rr]obots.txt
 
 ########################
@@ -17,18 +32,4 @@ Desktop.ini
 # Mac crap
 .DS_Store
 
-##/vendor
-##/bootstrap/compiled.php
 
-/app/storage/cache
-/app/storage/logs
-/app/storage/meta
-/app/storage/sessions
-/app/storage/views
-
-/public/.htaccess
-
-composer.phar
-composer.lock
-
-.project
