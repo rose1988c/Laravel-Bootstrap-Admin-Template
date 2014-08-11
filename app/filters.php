@@ -122,5 +122,5 @@ Route::filter('dev', function()
 | Route Cache Filter
 |--------------------------------------------------------------------------
 */
-Route::filter('cache.fetch', 'Mcc\Filters@fetch');
-Route::filter('cache.put', 'Mcc\Filters@put');
+Route::filter('cache.fetch', 'Mcc\Filters\CacheFilter@fetch');
+Route::filter('cache.put', 'Mcc\Filters\CacheFilter@put');
