@@ -9,7 +9,7 @@
 		<div class="form-group">
 			<label class="col-sm-4 control-label">角色名称:</label>
 			<div class="col-sm-6">
-			    <input type="email" name="name" value="" class="form-control">
+			    <input type="text" name="name" value="" class="form-control">
 			</div>
 		</div>
 	</form>
