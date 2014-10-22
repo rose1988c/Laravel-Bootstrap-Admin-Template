@@ -18,21 +18,21 @@
 		<div class="form-group">
 			<label class="col-sm-4 control-label">菜单名:</label>
 			<div class="col-sm-6">
-				<input type="email" name="name" value="{{$menu['name']}}" class="form-control">
+				<input type="text" name="name" value="{{$menu['name']}}" class="form-control">
 			</div>
 		</div>
 
 		<div class="form-group">
 			<label class="col-sm-4 control-label">路径:</label>
 			<div class="col-sm-6">
-				<input type="email" name="url" value="{{$menu['url']}}" class="form-control">
+				<input type="text" name="url" value="{{$menu['url']}}" class="form-control">
 			</div>
 		</div>
 
 		<div class="form-group">
 			<label class="col-sm-4 control-label">图标<a href="//v3.bootcss.com/components/#glyphicons" data-original-title="图标选择" target="_blank">go</a>:</label>
 			<div class="col-sm-6">
-				<input type="email" name="icons" value="{{$menu['icons']}}" class="form-control">
+				<input type="text" name="icons" value="{{$menu['icons']}}" class="form-control">
 			</div>
 		</div>
 

@@ -23,14 +23,14 @@
 		<div class="form-group">
 			<label class="col-sm-4 control-label">昵称:</label>
 			<div class="col-sm-6">
-				<input type="email" name="nickname" value="{{$user['nickname']}}" class="form-control">
+				<input type="text" name="nickname" value="{{$user['nickname']}}" class="form-control">
 			</div>
 		</div>
 
 		<div class="form-group">
 			<label class="col-sm-4 control-label">真实姓名:</label>
 			<div class="col-sm-6">
-				<input type="email" name="truename" value="{{$user['truename']}}" class="form-control">
+				<input type="text" name="truename" value="{{$user['truename']}}" class="form-control">
 			</div>
 		</div>
 
