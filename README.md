@@ -16,8 +16,11 @@
 * 菜单管理
 * 角色管理
 
+鉴于国内伟大的墙，整个`vendor`文件夹上传了，不然费时费力。
+
 ### 预览
 
+仅仅是预览图，与功能无关
 ![http://www.webpagescreenshot.info/i3/53b272f6a6ad55-76462999](http://www.webpagescreenshot.info/i3/53b272f6a6ad55-76462999)
 
 ## 安装
