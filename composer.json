@@ -5,10 +5,12 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
+    "patchwork/utf8": "1.*",
 		"barryvdh/laravel-ide-helper": "1.*",
 		"bllim/datatables": "*",
-        "way/generators": "2.*",
-        "guzzlehttp/guzzle": "~4.0"
+    "way/generators": "2.*",
+    "guzzlehttp/guzzle": "~4.0",
+    "qiniu/qiniu": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

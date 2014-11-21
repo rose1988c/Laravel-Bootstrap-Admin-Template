@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+.copyrights {
+	border-top: 1px solid #ddd;
+	border-color: #eeeeee;
+	float: left;
+	width: 100%;
+	clear: both;
+	bottom: 0px;
+}
+
+.copyrights .note {
+	margin: 0 auto;
+	clear: both;
+	max-width: 96%;
+	padding-top: 10px;
+	padding-bottom: 7px;
+}
+
+.copyrights .top {
+	float: right;
+}
+
+.copyrights a {
+	color: #1c8b78;
+}

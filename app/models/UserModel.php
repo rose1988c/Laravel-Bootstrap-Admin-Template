@@ -8,28 +8,15 @@
  * @logs: 
  *       
  */
-use Illuminate\Auth\UserTrait;
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableTrait;
 use \Illuminate\Auth\Reminders\RemindableInterface;
+use \Illuminate\Auth\UserInterface;
 class UserModel extends Eloquent implements RemindableInterface, UserInterface
 {
-    use UserTrait, RemindableTrait;
-    
-    /**
-     * The database table used by the model.
-     *
-     * @var string
-     */
     protected $table = 'mcc_user';
-    
+    protected $fillable = array ();
     protected $guarded = array ();
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
-    protected $hidden = array('password', 'remember_token');
+    protected $hidden = array('password', 'remember_token', 'deleted_at');
+    protected $softDelete = true;
     
     public function getReminderEmail()
     {

@@ -11,4 +11,5 @@
 |
 */
 
-Artisan::add(new AppCommand);
+// 安装脚本
+Artisan::add(new AppInstall);

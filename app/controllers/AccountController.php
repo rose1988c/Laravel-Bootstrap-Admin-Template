@@ -95,6 +95,10 @@ class AccountController extends BaseController
                     'ip' => Request::getClientIp(),
                     'login_at' => date('Y-m-d H:i:s', Request::server('REQUEST_TIME')),
                 ));
+                
+                //获取用户宝宝信息
+                \Service\Repository\BabyRepository::setUserBabys();
+                
                 return Redirect::intended('/');
             } else {
                 Session::flash('flash_notice', '用户或密码错误!');
@@ -108,6 +112,7 @@ class AccountController extends BaseController
 
     public function logout() {
         Auth::logout();
+        Session::flush();
         return Redirect::intended('/');
     }
     

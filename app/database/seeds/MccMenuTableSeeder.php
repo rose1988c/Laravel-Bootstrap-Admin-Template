@@ -72,7 +72,37 @@ class MccMenuTableSeeder extends Seeder {
                 'sorts' => 0,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime() 
-            )
+            ),
+            array(
+                'id' => 9,
+                'pid' => 0,
+                'name' => '宝宝信息',
+                'url' => '',
+                'icons' => 'glyphicon glyphicon-heart',
+                'sorts' => 0,
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime() 
+            ),
+            array(
+                'id' => 10,
+                'pid' => 9,
+                'name' => '宝宝列表',
+                'url' => 'manage/baby',
+                'icons' => '',
+                'sorts' => 0,
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime() 
+            ),
+            array(
+                'id' => 11,
+                'pid' => 9,
+                'name' => '宝宝照片',
+                'url' => 'manage/photo',
+                'icons' => '',
+                'sorts' => 0,
+                'created_at' => new DateTime(),
+                'updated_at' => new DateTime() 
+            ),
         ));
     }
 

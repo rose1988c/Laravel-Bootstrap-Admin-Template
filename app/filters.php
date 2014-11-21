@@ -19,7 +19,7 @@ App::before(function($request)
 
 App::after(function($request, $response)
 {
-    //记录 action_log
+	//记录 action_log
     $user = Auth::user();
     if ($user && Request::isMethod('post') ) {
         $data = array(
@@ -46,17 +46,8 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest())
-	{
-		if (Request::ajax())
-		{
-			return Response::make('Unauthorized', 401);
-		}
-		else
-		{
-			return Redirect::guest('login');
-		}
-	}
+    if (Auth::guest())
+        return Redirect::guest('login');
 });
 
 Route::filter('auth.manage', function()
@@ -117,10 +108,7 @@ Route::filter('dev', function()
     if (app()->environment() != 'dev') return Redirect::to(route('index'));
 });
 
-/*
- |--------------------------------------------------------------------------
-| Route Cache Filter
-|--------------------------------------------------------------------------
-*/
-Route::filter('cache.fetch', 'Mcc\Filters\CacheFilter@fetch');
-Route::filter('cache.put', 'Mcc\Filters\CacheFilter@put');
+Route::filter('cache.fetch', 'Service\Filters\CacheFilter@fetch');
+Route::filter('cache.put', 'Service\Filters\CacheFilter@put');
+Route::filter('cache.delete', 'Service\Filters\CacheFilter@delete');
+Route::filter('cache.flush', 'Service\Filters\CacheFilter@flush');

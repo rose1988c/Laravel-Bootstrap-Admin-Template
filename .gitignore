@@ -2,8 +2,8 @@
 ## Project
 ########################
 
-/bootstrap/compiled.php
-/vendor
+#/bootstrap/compiled.php
+#/vendor
 composer.phar
 composer.lock
 .env.*.php

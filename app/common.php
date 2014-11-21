@@ -4,6 +4,8 @@ defined('USER_ROLE_SUPER_ADMIN') or define('USER_ROLE_SUPER_ADMIN', 1);
 defined('USER_ROLE_ADMIN') or define('USER_ROLE_ADMIN', 2);
 defined('USER_ROLE_USER') or define('USER_ROLE_USER', 3);
 
+defined('SITE_NAME') or define('SITE_NAME', '宝宝分享平台');
+
 function is_super_admin()
 {
     if (Auth::check() && in_array(Auth::user()->getAuthRoleId(), array(USER_ROLE_SUPER_ADMIN))){

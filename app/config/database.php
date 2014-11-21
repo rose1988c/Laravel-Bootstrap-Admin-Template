@@ -1,5 +1,4 @@
 <?php
-
 return array(
 
 	/*
@@ -45,46 +44,46 @@ return array(
 	*/
 
 	'connections' => array(
-
-		'sqlite' => array(
-			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/production.sqlite',
-			'prefix'   => '',
-		),
-
-		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => getenv('OPENSHIFT_MYSQL_DB_HOST'),
-			'port'      => getenv('OPENSHIFT_MYSQL_DB_PORT'),
-			'database'  => getenv('OPENSHIFT_APP_NAME'),
-			'username'  => getenv('OPENSHIFT_MYSQL_DB_USERNAME'),
-			'password'  => getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
-			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
-		),
-
-		'pgsql' => array(
-			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'charset'  => 'utf8',
-			'prefix'   => '',
-			'schema'   => 'public',
-		),
-
-		'sqlsrv' => array(
-			'driver'   => 'sqlsrv',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'prefix'   => '',
-		),
-
-	),
+        
+        'sqlite' => array(
+            'driver' => 'sqlite',
+            'database' => __DIR__ . '/../database/production.sqlite',
+            'prefix' => ''
+        ),
+        
+        'mysql' => array(
+            'driver' => 'mysql',
+            'host' => '127.0.0.1',
+            'port' => 3306,
+            'database' => 'mcc_manage',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => ''
+        ),
+        
+        'pgsql' => array(
+            'driver' => 'pgsql',
+            'host' => 'localhost',
+            'database' => 'database',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public'
+        ),
+        
+        'sqlsrv' => array(
+            'driver' => 'sqlsrv',
+            'host' => 'localhost',
+            'database' => 'database',
+            'username' => 'root',
+            'password' => '',
+            'prefix' => ''
+        )
+    )
+    ,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -111,15 +110,15 @@ return array(
 	*/
 
 	'redis' => array(
-
-		'cluster' => false,
-
-		'default' => array(
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
-			'database' => 0,
-		),
-
-	),
-
-);
+        
+        'cluster' => false,
+        
+        'default' => array(
+            'host' => '127.0.0.1',
+            'port' => 6379,
+            'database' => 0
+        )
+    )
+    
+)
+;
